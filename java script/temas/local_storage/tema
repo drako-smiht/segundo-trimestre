@@ -1,0 +1,8 @@
+local storage 
+todo lo que le quieras guardar va por string por defaul para guardarlo en otro formato se tiene que parsear
+getitem ()
+setitem ()
+con el set insertas el dato
+pide dos cosas el nombre de la variable y lo que quiere guardar
+eje ("islogin",true)
+json
