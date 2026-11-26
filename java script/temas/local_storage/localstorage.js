@@ -9,16 +9,11 @@ const guardar = () => {
         gmail : document.getElementById("gmail").value,
     })
     localStorage.setItem("DatosUsuario",JSON.stringify(data))
-    listarDatos()
 
-    if (typeof exito === "function" && typeof Swal !== "undefined") {
-        exito()
-    }
+    listarDatos()
+    exito()
 }
 
-function ObtenerDatos(){
-    listarDatos()
-}
 function listarDatos(){
     let data = JSON.parse(localStorage.getItem("DatosUsuario")) || []
     let tabla = document.getElementById("tabla")
@@ -42,7 +37,9 @@ function listarDatos(){
     })
 }
 
-listarDatos()
 // para guardar un json uso un metodo
 // JSON.stringify() para convertir el objeto en un string y poder guardarlo en el localStorage
 //para obtener ese objeto
+function Buacardatos(){alert("este dato ya existe")}
+
+listarDatos()
